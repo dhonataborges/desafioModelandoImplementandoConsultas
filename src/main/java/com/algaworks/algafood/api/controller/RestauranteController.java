@@ -20,7 +20,7 @@ public class RestauranteController {
 	private RestauranteRepository restauranteRepository;
 	
 	@GetMapping
-	private List<Restaurante> listar() {
+	public List<Restaurante> listar() {
 		return restauranteRepository.listar();
 
 	}
